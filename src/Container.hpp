@@ -7,17 +7,17 @@ using namespace std;
 
 class Container : public Component {
 public:
-   Container();
-   virtual ~Container();
-   void addComponent(Component* component);
-   void notifyAll(Event *event);
-   void setVisible(bool visible);
-   void renderAll(int rootX, int rootY, int rootWidth, int rootHeight);
-   vector<Component*> *getComponents() const;
+   Container(); //Конструктор
+   virtual ~Container(); //Деструктор
+   void addComponent(Component *component); //Добавить компонент в контейнер
+   void notifyAll(Event *event); //Вызывает свой notify, notify компонентов в контейнере и notifyAll контейнеров в контейнере
+   void setVisible(bool visible);//Устанавливает видимость контейнера и дочерних элементов
+   void renderAll(int rootX, int rootY, int rootWidth, int rootHeight); //Вызывает свой render, render компонентов в контейнере и renderAll контейнеров в контейнере
+   vector<Component*> *getComponents() const; //Возращает динамический массив компонентов
 protected:
-   void draw(int rootWidth, int rootHeight){}
+   void draw(int rootWidth, int rootHeight) {} //Метод отрисовки контейнера
 private:
-    vector<Component*> *components;
+   vector<Component*> *components; //Динамический массив компонентов контейнера
 };
 
 #endif

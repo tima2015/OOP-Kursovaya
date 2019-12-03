@@ -1,7 +1,5 @@
 #include "Container.hpp"
 #include "Window.hpp"
-#include <iostream>
-using namespace std;
 
 Container::Container(){
 components = new vector<Component*>();   

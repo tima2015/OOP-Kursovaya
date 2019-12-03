@@ -40,7 +40,7 @@ protected:
    int bgColor = LIGHTGRAY; //Цвет фона, по умолчанию светло-серый
    int color = BLACK; //Основной цвет рисования, по умолчанию чёрный
 private:
-   vector<Listeners *> listeners; //Динамический массив слушателей
+   vector<Listener*> listeners; //Динамический массив слушателей
 };
 
 #endif
