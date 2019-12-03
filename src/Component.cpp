@@ -11,7 +11,7 @@ Component::~Component() {
 }
 
 void Component::addListener(Listener *listener) {
-   this->listeners.push_back(listener);
+   listeners.push_back(listener);
 }
 
 
@@ -25,7 +25,7 @@ bool Component::isVisible() const {
    return visible;
 }
 
-void Component::render(int rootX, int rootY, int rootWidth, int rootHeight){
+void Component::render(int rootX, int rootY, int rootWidth, int rootHeight) {
    absolutX = rootX + x;
    absolutY = rootY + y;
    if (visible == false)
@@ -49,27 +49,27 @@ int Component::getY() const {
    return y;
 }
 
-int Component::getAbsolutX() const{
+int Component::getAbsolutX() const {
    return absolutX;
 }
 
-int Component::getAbsolutY() const{
-   return absolutY;  
+int Component::getAbsolutY() const {
+   return absolutY;
 }
 
-string Component::getTag() const{
-	return tag;
+string Component::getTag() const {
+   return tag;
 }
 
 void Component::setVisible(bool visible) {
    this->visible = visible;
 }
 
-void Component::setWidth(int width){
-	this->width = width;
+void Component::setWidth(int width) {
+   this->width = width;
 }
-void Component::setHeight(int height){
-	this->height = height;
+void Component::setHeight(int height) {
+   this->height = height;
 }
 
 void Component::setX(int x) {
@@ -85,14 +85,14 @@ void Component::setPosition(int x, int y) {
    this->y = y;
 }
 
-void Component::setBgColor(int color){
+void Component::setBgColor(int color) {
    bgColor = color;
 }
 
-void Component::setColor(int color){
+void Component::setColor(int color) {
    this->color = color;
 }
 
-void Component::setTag(string tag){
-	this->tag = tag;
+void Component::setTag(string tag) {
+   this->tag = tag;
 }
