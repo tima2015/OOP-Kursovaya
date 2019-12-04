@@ -13,11 +13,11 @@ public:
    void notifyAll(Event *event); //Вызывает свой notify, notify компонентов в контейнере и notifyAll контейнеров в контейнере
    void setVisible(bool visible);//Устанавливает видимость контейнера и дочерних элементов
    void renderAll(int rootX, int rootY, int rootWidth, int rootHeight); //Вызывает свой render, render компонентов в контейнере и renderAll контейнеров в контейнере
-   vector<Component*> *getComponents() const; //Возращает динамический массив компонентов
+   vector<Component *> *getComponents() const; //Возращает динамический массив компонентов
 protected:
    void draw(int rootWidth, int rootHeight) {} //Метод отрисовки контейнера
 private:
-   vector<Component*> *components; //Динамический массив компонентов контейнера
+   vector<Component *> *components; //Динамический массив компонентов контейнера
 };
 
 #endif
