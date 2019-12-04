@@ -35,7 +35,6 @@ IMAGE *Image::createmask(IMAGE *p) {
 }
 
 void Image::draw(int rootWidth, int rootHeight) {
-
    putimage(absolutX,absolutY,mask,AND_PUT);
    putimage(absolutX,absolutY,img,OR_PUT);
 }
