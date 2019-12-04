@@ -1,4 +1,5 @@
 #include "Container.hpp"
+#include "Label.hpp"
 
 #ifndef BUTTON_HPP
 #define BUTTON_HPP
