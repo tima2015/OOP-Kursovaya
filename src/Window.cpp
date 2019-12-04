@@ -1,8 +1,5 @@
 #include "Window.hpp"
 #include "graphics.h"
-#include <iostream>
-
-using namespace std;
 
 Window::Window(string title, int width, int height) {
    this->title = title;
