@@ -12,8 +12,8 @@ Screen::Screen() {
 }
 
 void Screen::start() {
-      width = getmaxx();
-      height = getmaxy();
+   width = getmaxx();
+   height = getmaxy();
 
    AboutButton *ab = new AboutButton(this);
    addComponent(ab);
