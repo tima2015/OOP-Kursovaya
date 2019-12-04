@@ -1,5 +1,4 @@
 #include "Window.hpp"
-#include "graphics.h"
 
 Window::Window(string title, int width, int height) {
    this->title = title;
