@@ -41,7 +41,7 @@ private:
       public:
          AboutButtonOnClickListener(AboutButton *button,Screen *screen);//Конструктор
       private:
-			Screen *screen; //Кореной элемент
+         Screen *screen; //Кореной элемент
          AboutButton *button;//Родительская кнопка
          void onClick(MouseEvent *event); //Открытие окна "о библиотеке"
       };
