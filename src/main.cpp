@@ -17,7 +17,7 @@ int main() {
    Screen *screen = new Screen();
    test1(screen);
    test2(screen);
-   screen->start(true);
+   screen->start();
    delete screen;
     return 0;
 }
