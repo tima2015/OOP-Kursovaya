@@ -1,7 +1,8 @@
 #include "Screen.hpp"
 
 Screen::Screen() {
-
+   width = getmaxx();
+   height = getmaxy();
    ScreenOnKeyUpListener *sokul = new ScreenOnKeyUpListener(this);
    ScreenOnSelectListner *sosl = new ScreenOnSelectListner(this);
    addListener(sokul);
@@ -12,9 +13,6 @@ Screen::Screen() {
 }
 
 void Screen::start() {
-   width = getmaxx();
-   height = getmaxy();
-
    AboutButton *ab = new AboutButton(this);
    addComponent(ab);
    run = true;
