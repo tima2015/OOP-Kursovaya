@@ -1,7 +1,4 @@
 #include "Screen.hpp"
-#include <iostream>
-
-using namespace std;
 
 Screen::Screen() {
 
@@ -11,17 +8,12 @@ Screen::Screen() {
    addListener(sosl);
    x = 0;
    y = 0;
-   width = WIDTH;
-   height = HEIGHT;
    tag = "Screen";
 }
 
-void Screen::start(bool rootCreated) {
-   if (rootCreated) {
+void Screen::start() {
       width = getmaxx();
       height = getmaxy();
-   } else
-      initwindow(width,height);
 
    AboutButton *ab = new AboutButton(this);
    addComponent(ab);
