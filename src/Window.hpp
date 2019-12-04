@@ -21,14 +21,14 @@ private:
    string title;//текст заголовка окна
    class WindowOnDragListener : public OnDragListener { //вложеный класс, реализующий слушатель перетаскивани€ мышью
    public:
-      WindowOnDragListener(Window *window);//конструктор
+      WindowOnDragListener(Window *window);// онструктор
    private:
       Window *window;//окно слушател€
       void onDrag(MouseEvent *event);//перемещение окна
    };
    class WindowOnClickListener : public OnClickListener { //вложеный класс, реализующий слушатель шелчка левой кнопки мыши
    public:
-      WindowOnClickListener(Window *window);
+      WindowOnClickListener(Window *window);// онструктор
    private:
       Window *window;//окно слушател€
       void onClick(MouseEvent *event);//сн€тие флага перемещени€
