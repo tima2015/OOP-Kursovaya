@@ -13,7 +13,7 @@ void test2(Screen *screen);
  * 
  */
 int main() {
-   initwindow(WIDTH,HEIGHT);
+   initwindow(1280,720);
    Screen *screen = new Screen();
    test1(screen);
    test2(screen);
