@@ -19,12 +19,11 @@ void Button::setCheckColor(int color) {
 }
 
 void Button::setPressedColor(int color) {
-   this->pressedColor = color;
+   pressedColor = color;
 }
 
 void Button::draw(int rootWidth, int rootHeight) {
    int c;
-
    switch (stage) {
    case UP:
       c = bgColor;
