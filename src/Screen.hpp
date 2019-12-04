@@ -1,11 +1,9 @@
-#include"Container.hpp"
+#include "Container.hpp"
 #include "Button.hpp"
 #include "Window.hpp"
 #include "TextInputField.hpp"
 #include "Image.hpp"
 
-#define WIDTH 1024
-#define HEIGHT 768
 #ifndef SCREEN_HPP
 #define SCREEN_HPP
 
@@ -13,7 +11,7 @@ class Screen : public Container {
 public:
    Screen();//Конструктор
    ~Screen() {}; //Деструктор
-   void start(bool rootCreated = false);//Инициализация графического интерфейса
+   void start();//Инициализация графического интерфейса
 private:
    void draw(int rootWidth, int rootHeight);//Метод отрисовки
    bool run;//Флаг, при false приложение завершает свою работу
@@ -45,7 +43,7 @@ private:
       private:
 			Screen *screen; //Кореной элемент
          AboutButton *button;//Родительская кнопка
-         void onClick(MouseEvent *event);
+         void onClick(MouseEvent *event); //Открытие окна "о библиотеке"
       };
    };
 };
