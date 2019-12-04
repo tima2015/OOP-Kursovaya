@@ -1,5 +1,4 @@
 #include "Container.hpp"
-#include <string>
 
 #ifndef LABEL_HPP
 #define LABEL_HPP
