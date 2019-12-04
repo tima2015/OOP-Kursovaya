@@ -1,7 +1,4 @@
 #include "Button.hpp"
-#include <iostream>
-
-using namespace std;
 
 Button::Button(int x, int y, int width, int height) {
    this->x = x;
