@@ -1,5 +1,4 @@
 #include "Container.hpp"
-#include <string>
 
 #ifndef TEXTINPUTFIELD_HPP
 #define TEXTINPUTFIELD_HPP
@@ -14,15 +13,15 @@ public:
    void setText(string text);//Устанавливает текст поля
    string getText() const;//Возвращает текст поля
 protected:
-   void draw(int rootWidth, int rootHeight);
+   void draw(int rootWidth, int rootHeight);//Отрисовка
 private:
-   string text;//текст поля
+   string text;//Текст поля
    class InputOnKeyListener : public OnKeyUpListener {
    public:
-      InputOnKeyListener(TextInputField *field);
+      InputOnKeyListener(TextInputField *field);//Конструктор
    private:
-      TextInputField *field;
-      void onKeyUp(KeyboardEvent *event);
+      TextInputField *field;//Родительское поле ввода
+      void onKeyUp(KeyboardEvent *event);//Обработка события ввода
    };
 };
 
