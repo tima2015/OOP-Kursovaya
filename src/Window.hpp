@@ -1,5 +1,4 @@
 #include "Container.hpp"
-#include <string>
 
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
