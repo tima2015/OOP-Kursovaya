@@ -5,13 +5,13 @@
 
 class Image : public Component{
    public:
-      Image(string path, int x = 0, int y = 0, bool useMask = false);
-      virtual ~Image();
-	  void draw(int rootWidth, int rootHeight);
+      Image(string path, int x = 0, int y = 0, bool useMask = false);//Конструктор
+      virtual ~Image();//Деструктор
+	  void draw(int rootWidth, int rootHeight);//Отрисовка изображения
 	private:
-		bool useMask;
-		IMAGE *img, *mask;
-		IMAGE *createmask(IMAGE *p);
+		bool useMask;//флаг использования маски (альтернатива альфа канала)
+		IMAGE *img, *mask;//изображение и маска
+		IMAGE *createmask(IMAGE *p);//создание маски
 };
 
 #endif
