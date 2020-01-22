@@ -22,7 +22,6 @@ public:
    enum Type {
       MOVE, DRAG, LEFT_KEY_DOWN, LEFT_KEY_UP
    };
-
    MouseEvent(int, int, Type, int = 0, int = 0);//Конструктор
    int getX() const;//Возращает позицию x нажатия мыши
    int getY() const;// Возращает позицию y нажатия мыши
@@ -34,6 +33,7 @@ private:
    Type type;//тип события мыши
 };
 
+//Событие клавиатуры
 class KeyboardEvent : public Event {
 public:
    KeyboardEvent(int, int = 0);//Конструктор

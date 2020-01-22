@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Container : public Component {
+class Container : public Component {//Контейнер
 public:
    Container(); //Конструктор
    virtual ~Container(); //Деструктор

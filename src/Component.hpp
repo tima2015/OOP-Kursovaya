@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Component {
+class Component { //Компонент
 public:
    virtual ~Component(); //Деструктор
    void addListener(Listener *listener); //Добавляет слушателя

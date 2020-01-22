@@ -7,7 +7,7 @@
 #ifndef SCREEN_HPP
 #define SCREEN_HPP
 
-class Screen : public Container {
+class Screen : public Container {//Экран, основа отображения элементов
 public:
    Screen();//Конструктор
    ~Screen() {}; //Деструктор
